@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: tomcat
+  name: tomcat1
   labels:
     app: hello
 spec:
   containers:
     - name: tomcat
-      image: hemanthc12/tomcat
+      image: hemanthc12/tomcat1
       ports:
         - containerPort: 8080
