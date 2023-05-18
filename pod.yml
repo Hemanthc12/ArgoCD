@@ -15,7 +15,7 @@ spec:
   template:
     metadata:
       labels:
-        app: serviceobjrct
+        app: tomcat
     spec:
       containers:
       - image: hemanthc12/tomcat
