@@ -1,8 +1,11 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  name: tomcat
+  name: tomcat1
+  labels:
+    app: hello
 spec:
+<<<<<<< HEAD
   replicas: 1
   strategy:
     type: RollingUpdate
@@ -22,3 +25,10 @@ spec:
         name: tomcat
         ports:
         - containerPort: 8080
+=======
+  containers:
+    - name: tomcat
+      image: hemanthc12/tomcat1
+      ports:
+        - containerPort: 8080
+>>>>>>> 56b0acad6460555cb0cd72f4723672bac7e0213f

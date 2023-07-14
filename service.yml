@@ -1,13 +1,20 @@
 kind: Service
 apiVersion: v1
 metadata:
+<<<<<<< HEAD
   name: so
 spec:
   selector:
     app: webapps
+=======
+  name: so1
+spec:
+  selector:
+    app: tomcat
+>>>>>>> 56b0acad6460555cb0cd72f4723672bac7e0213f
   ports:
   - protocol: TCP
     port: 80
     targetPort: 8080
-    nodePort: 30000
+    nodePort: 30001
   type: NodePort
